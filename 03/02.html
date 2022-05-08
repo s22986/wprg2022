@@ -1,0 +1,54 @@
+<html>
+    <body>
+        <title>02 - Rezerwacje</title>
+        <meta charset="UTF-8" />
+    </body>
+
+    <head>
+        <form action="02.php" method="post">
+            <label for="gLiczba">Liczba gości:</label><br>
+            <select id="gLiczba" name="gLiczba">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+            </select><br><br>
+
+            <label for="imie">Imię:</label><br>
+            <input type="text" id="imie" name="imie" required><br><br>
+
+            <label for="nazwisko">Nazwisko:</label><br>
+            <input type="text" id="nazwisko" name="nazwisko" required><br><br>
+
+            <label for="adres">Adres:</label><br>
+            <input type="text" id="adres" name="adres" required><br><br>
+            
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="karta">Nr karty płatniczej:</label><br>
+            <input type="tel" maxlength="19" id="karta" name="karta" required><br><br>
+
+            <label for="data">Data pobytu:</label><br>
+            <input type="date" id="data" name="data" required><br><br>
+
+            <label for="gPrzyjazdu">Godzina przyjazdu:</label><br>
+            <input type="time" id="gPrzyjazdu" name="gPrzyjazdu"><br><br>
+            
+            <input type="checkbox" id="dziecko" name="dziecko" value="tak">
+            <label for="dziecko">Pokój dla pary z dzieckiem?</label><br><br>
+            
+            <p><b>Udogodnienia:</b></p>
+            <input type="checkbox" id="klima" name="klima" value="tak">
+            <label for="klima">Klimatyzacja?</label><br>
+
+            <input type="checkbox" id="morze" name="morze" value="tak">
+            <label for="morze">Widok na morze?</label><br>
+
+            <input type="checkbox" id="rezerwacja" name="rezerwacja" value="tak">
+            <label for="rezerwacja">Możliwość rezygnacji z rezerwacji na 24h przed przyjazdem?</label><br><br>
+
+            <input type="submit" value="Zarezerwuj">
+        </form>
+    </head>
+</html>
